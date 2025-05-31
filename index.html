@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Cláudia Costa | Desenvolvedora Front-end</title>
+  <meta name="description" content="Portfólio de Cláudia Costa, desenvolvedora front-end">
+  <meta name="keywords" content="portfolio, desenvolvedor, frontend, HTML, CSS, JavaScript, React">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <button id="modeToggle">🌙</button>
+
+  <header>
+    <nav class="navbar">
+      <h1>Cláudia Paniago</h1>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 data-aos="fade-down">Cláudia Paniago</h1>
+      <p data-aos="fade-down" data-aos-delay="200">Desenvolvedora Front-end</p>
+      <a href="#projetos" class="btn" data-aos="fade-up" data-aos-delay="400">Ver meus projetos</a>
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <div class="container" data-aos="fade-up">
+      <h2>Sobre</h2>
+      <div class="about-content">
+        <img src="img/IMG_1251.jpg" alt="Cláudia Costa" class="profile-pic" data-aos="fade-right" width="30%" loading="lazy">
+        <div class="about-text" data-aos="fade-left">
+          <p>
+            Olá! Sou a Cláudia, estudante de programação focada em front-end, apaixonada por criar interfaces elegantes e funcionais.
+          </p>
+          <p>
+            Com background em design, trago uma perspectiva única para o desenvolvimento web, combinando habilidades técnicas com sensibilidade estética.
+          </p>
+          <p>
+            Atualmente estou aprofundando meus conhecimentos em React e Java para me tornar uma desenvolvedora full-stack.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Habilidades -->
+  <section id="habilidades" class="container" data-aos="fade-up">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Front-end</h3>
+        <ul>
+          <li><i class="fab fa-html5"></i> HTML5</li>
+          <li><i class="fab fa-css3-alt"></i> CSS3/</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+          <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3>Ferramentas</h3>
+        <ul>
+          <li><i class="fab fa-git"></i> Git</li>
+          <li><i class="fab fa-github"></i> GitHub</li>
+          <li><i class="fa-brands fa-figma"></i> Figma</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3>Estudando</h3>
+        <ul>
+          <li><i class="fab fa-react"></i> React</li>
+          <li><i class="fa-brands fa-java"></i>Java</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="projects-section container" data-aos="fade-up">
+    <h2>Projetos</h2>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev-btn" aria-label="Projeto anterior">&#10094;</button>
+
+      <div class="carousel">
+        <div class="project-card" data-aos="fade-right" data-aos-delay="100">
+          <img src="img/preview.png" alt="Tela de login" />
+          <div class="project-info">
+            <h3 class="project-title">Tela de login</h3>
+            <p class="project-desc">Este projeto consiste em uma página de login e cadastro, utilizando os conceitos de Glassmorphism para um visual moderno e elegante.</p>
+            <div class="tech-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://login-eosin-rho.vercel.app/" target="_blank" title="Ver projeto">
+                <i class="fa-solid fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/ClaudiaCPaniago/login_glassmorphism" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-right">
+          <img src="img/arquiteta.png" alt="Site de Arquitetura" />
+          <div class="project-info">
+            <h3 class="project-title">Site de Arquitetura</h3>
+            <p class="project-desc">Site institucional para escritório de arquitetura com design responsivo e galeria de projetos.</p>
+            <div class="tech-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://arquitetura-dun.vercel.app" target="_blank" title="Ver projeto">
+                <i class="fa-solid fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/ClaudiaCPaniago/sitearquiteta" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-right" data-aos-delay="100">
+          <img src="img/calculadoradeimc.jpg" alt="Calculadora  de IMC" />
+          <div class="project-info">
+            <h3 class="project-title">Calculadora de IMC</h3>
+            <p class="project-desc">Calculadora de Índice de Massa Corporal - IMC</p>
+            <div class="tech-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://calculadora-imc-five-kappa.vercel.app/" target="_blank" title="Ver projeto">
+                <i class="fa-solid fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/ClaudiaCPaniago/calculadora_imc" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-right" data-aos-delay="200">
+          <img src="img/preview_index.png" alt="Caravan" />
+          <div class="project-info">
+            <h3 class="project-title">Caravan</h3>
+            <p class="project-desc">O projeto Caravan foi desenvolvido durante o curso de Bootstrap da Origamid.</p>
+            <div class="tech-used">
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://caravan-opal.vercel.app/" target="_blank" title="Ver projeto">
+                <i class="fa-solid fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/ClaudiaCPaniago/caravan" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-right" data-aos-delay="100">
+        <img src="img/Desktop.png" alt="Gerador de conselhos" />
+        <div class="project-info">
+          <h3 class="project-title">Gerador de conselhos</h3>
+          <p class="project-desc">Este projeto é um desafio do Frontend Mentor que consiste em criar um gerador de conselhos utilizando a API Advice Slip, fornecendo conselhos aleatórios aos usuários.</p>
+          <div class="tech-used">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://gerador-de-conselhos-five.vercel.app/" target="_blank" title="Ver projeto">
+              <i class="fa-solid fa-eye"></i> Demo
+            </a>
+            <a href="https://github.com/ClaudiaCPaniago/gerador-de-conselhos" target="_blank" title="GitHub">
+              <i class="fa-brands fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="carousel-btn next-btn" aria-label="Próximo projeto">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" data-aos="fade-up" class="container">
+    <h2>Contato</h2>
+    <p>Entre em contato para oportunidades, dúvidas ou para conversar sobre tecnologia!</p>
+
+    <div class="contact-container">
+      <form id="contact-form">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Outras formas de contato</h3>
+        <p><i class="fa-solid fa-envelope"></i> claudia.costa@example.com</p>
+        <p><i class="fa-solid fa-phone"></i> (99) 99999-9999</p>
+
+        <div class="social-links">
+          <a href="https://wa.me/5599999999999?text=Olá%20Cláudia!" target="_blank" class="btn whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/seu-usuario" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/seu_perfil" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="container">
+    <p>&copy; <span id="year"></span> Cláudia Costa. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/seu-usuario" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:claudia.costa@example.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" title="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="app.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Inicializa AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+
+    // Atualiza o ano no footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
