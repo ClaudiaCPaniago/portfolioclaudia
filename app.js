@@ -13,7 +13,6 @@ menuToggle.addEventListener("click", () => {
     : '<i class="fas fa-bars"></i>';
 });
 
-// Fechar menu ao clicar em um item
 document.querySelectorAll(".menu a").forEach((item) => {
   item.addEventListener("click", () => {
     menu.classList.remove("active");
@@ -21,13 +20,11 @@ document.querySelectorAll(".menu a").forEach((item) => {
   });
 });
 
-// Controle do carrossel de projetos
 const carousel = document.querySelector(".carousel");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
-// Largura do card + gap (30px)
 const cardWidth = projectCards[0].offsetWidth + 30;
 
 prevBtn.addEventListener("click", () => {

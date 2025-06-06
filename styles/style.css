@@ -157,7 +157,7 @@ h2::after {
 
 /* Seção Hero */
 .hero {
-  background-image: url(/img/wallpaper.jpg);
+  background-image: url(/assets/img/wallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -213,11 +213,55 @@ h2::after {
 
 .about-text {
   flex: 1;
+  text-align: justify;
 }
 
 .about-text p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
+}
+
+.btn-curriculo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  margin: 10px 0px;
+  background-color: var(--btn-bg);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-curriculo:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+/* Estilo para a citação */
+.portfolio-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 1.5rem 2rem;
+  border-left: 5px solid var(--primary-color);
+  background-color: #f5f7fa;
+  color: var(--text-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.portfolio-quote footer {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: right;
+  color: var(--text-color);
 }
 
 /* Seção Habilidades */
@@ -469,7 +513,7 @@ button {
 }
 
 .whatsapp:hover {
-  background-color: var(btn-hover-bg);
+  background-color: var(--btn-hover-bg);
 }
 
 .social-icons {
@@ -478,13 +522,13 @@ button {
 }
 
 .social-icons i {
-  color: var(--primary-color);
+  color: var(--btn-bg);
   font-size: 1.5rem;
   transition: var(--transition);
 }
 
-.social-icons a:hover {
-  color: var(--btn-bg);
+.social-icons a:hover i {
+  color: var(--btn-hover-bg);
   transform: translateY(-3px);
 }
 
@@ -548,7 +592,7 @@ footer .social-icons {
   cursor: pointer;
   box-shadow: 0 2px 10px var(--shadow-color);
   transition: var(--transition);
-  margin-left: auto; /* Alinha à direita se o header for flex */
+  margin-left: auto;
 }
 #modeToggle:hover {
   transform: scale(1.1);
@@ -611,6 +655,10 @@ footer .social-icons {
     padding: 7rem 1rem 4rem;
   }
 
+  .about-text {
+    margin: 5px 15px;
+  }
+
   h2 {
     font-size: 2rem;
   }
@@ -620,15 +668,27 @@ footer .social-icons {
     height: 200px;
   }
 
+  .portfolio-quote {
+    margin: 10px 20px;
+  }
   .project-card {
     flex: 0 0 280px;
+    scroll-snap-align: center;
+  }
+
+  #habilidades {
+    margin-top: 30px;
   }
 
   #modeToggle {
     bottom: 20px;
-    left: 20px;
+    margin: 0px 10px;
     width: 40px;
     height: 40px;
+  }
+
+  #contato .social-icons {
+    margin: 0 auto;
   }
 
   .back-to-top {
