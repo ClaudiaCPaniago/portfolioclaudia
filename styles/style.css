@@ -652,11 +652,21 @@ footer .social-icons {
 
 @media (max-width: 576px) {
   .hero {
-    padding: 7rem 1rem 4rem;
+    padding: 4rem 1rem 3rem;
+    min-height: 60vh;
+    background-image: url(/assets/img/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .about-text {
+  .hero-content {
+    max-width: 90%;
+  }
+
+  .about-text p {
     margin: 5px 15px;
+    font-size: 1.1rem;
   }
 
   h2 {
@@ -670,7 +680,9 @@ footer .social-icons {
 
   .portfolio-quote {
     margin: 10px 20px;
+    font-size: 1.1rem;
   }
+
   .project-card {
     flex: 0 0 280px;
     scroll-snap-align: center;
@@ -689,6 +701,13 @@ footer .social-icons {
 
   #contato .social-icons {
     margin: 0 auto;
+  }
+
+  #contato .social-links {
+    text-align: center;
+  }
+  .contact-info h3 {
+    text-align: center;
   }
 
   .back-to-top {
