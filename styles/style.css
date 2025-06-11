@@ -24,6 +24,13 @@ body.dark-mode {
   --shadow-color: rgba(0, 0, 0, 0.7);
 }
 
+body.dark-mode .portfolio-quote {
+  background-color: #2a2a2a;
+  color: var(--text-color);
+  border-left-color: var(--primary-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -255,7 +262,6 @@ h2::after {
   position: relative;
   line-height: 1.6;
 }
-
 .portfolio-quote footer {
   margin-top: 1rem;
   font-style: normal;
