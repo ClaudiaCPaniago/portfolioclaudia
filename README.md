@@ -31,5 +31,11 @@ Você pode visualizar o portfólio em funcionamento através do seguinte link:
 - Seções dedicadas a informações pessoais, projetos e contato.
 - Animações suaves para uma experiência de usuário agradável.
 
+##  Layout Responsivo
+
+O site foi projetado com foco na boa experiência de navegação em celulares, tablets e desktops.  
+ **Observação:** o layout ainda está em fase de ajustes para responsividade total. Algumas seções precisam de adaptações para garantir melhor visualização em diferentes tamanhos de tela.  
+
+
 ## ❤️ Contato
 claudiacostapaniago@gmail.com
